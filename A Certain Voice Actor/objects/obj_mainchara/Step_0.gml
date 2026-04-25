@@ -1,4 +1,7 @@
 /// @description Runs every frame
+
+if(!can_move) exit
+
 //control
 //are the buttons being pressed
 upbutton = keyboard_check(ord(obj_initialize.upkey)) || keyboard_check(vk_up)
@@ -91,6 +94,8 @@ switch (mState) {
         
         if (mInnerState == 0) { //enter
             mInnerState = 1
+            image_speed = 0
+            image_index = 0
         }
         if (mInnerState == 1) { //update
             var hmove = -leftbutton + rightbutton
@@ -255,14 +260,14 @@ switch (mState) {
     
 }
 
-// to prevent Frisk dancing on the spot:
+/*/ to prevent Frisk dancing on the spot:
 if (idling) {
     image_speed = 0;
     image_index = 0;
 }
 else {
     image_speed = 1;
-}
+}*/
 
 /*/ collision
 if (can_move) {
