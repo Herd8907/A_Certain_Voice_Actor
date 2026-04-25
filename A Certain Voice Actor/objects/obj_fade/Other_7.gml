@@ -1,0 +1,32 @@
+room_goto(target_room)
+obj_mainchara.x = target_x
+obj_mainchara.y = target_y
+
+//facing
+
+if (facing = 0) {
+	
+	obj_mainchara.sprite_index = spr_friskwr
+	
+}
+
+if (facing = 1) {
+	
+	obj_mainchara.sprite_index = spr_friskwl
+	
+}
+
+if (facing = 2) {
+	
+	obj_mainchara.sprite_index = spr_friskwd
+	
+}
+
+if (facing = 3) {
+	
+	obj_mainchara.sprite_index = spr_friskwu
+	
+}
+
+//fade out
+image_speed = -1
