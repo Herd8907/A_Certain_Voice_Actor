@@ -83,12 +83,6 @@ var face_dir = scr_face_to_string()
 var is_armored = global.stats.under.mainchara.ar == global.item.armor.stylish_wig
 var mode = wearing_wig ? "wigged" : "normal"
 
-if !keyboard_check(upbutton) && !keyboard_check(downbutton) {
-    show_debug_message("You should be dancing rn")
-} else {
-    show_debug_message("you arent dancing")
-}
-
 switch (mState) {
     case mainchara_state.idle : {
         
