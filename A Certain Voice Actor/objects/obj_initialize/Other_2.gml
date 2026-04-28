@@ -57,7 +57,7 @@ global.item = {
             id : "terrific_cocoa",
 			name : "Terrific Cocoa",
 			name_short : "TeriCocoa",
-            desc : "A cup of hot chocolate at the perfect temperature. Has microphone shaped marshmallows.",
+            desc : "Heals 25 HP A cup of hot chocolate at the perfect temperature. Has microphone shaped marshmallows.",
             
             heals : 25
             
@@ -68,7 +68,7 @@ global.item = {
             id : "honey_bunny",
 			name : "Honey Bunny",
 			name_short : "HoneyBun",
-            desc : "A honey bun in the shape of a rabbit. Reminds you of a certain snowy shop.",
+            desc : "Heals 12 HP A honey bun in the shape of a rabbit. Reminds you of a certain snowy shop.",
             
             heals : 12
             
@@ -79,7 +79,7 @@ global.item = {
             id : "pie",
 			name : "Butterscotch Pie",
 			name_short : "ButtPie",
-            desc : "A warm slice of Butterscotch and Cinnamon pie.",
+            desc : "All HP A warm slice of Butterscotch and Cinnamon pie.",
             
             heals : 99
             
@@ -90,9 +90,20 @@ global.item = {
             id : "fanta_c",
 			name : "The Fanta C",
 			name_short : "FantaC",
-            desc : "Is this the real life? Is this just Fanta C?",
+            desc : "All HP Is this the real life? Is this just Fanta C? Increases ATTACK and DEFENSE.",
             
             heals : 99
+            
+        },
+        
+        bandage : {
+			
+            id : "bandage",
+			name : "Bandage",
+			name_short : "Bandage",
+            desc : "Heals 10 HP It has already been used several times.",
+            
+            heals : 10
             
         },
 		
@@ -105,9 +116,20 @@ global.item = {
             id : "wooden_dirk",
 			name : "Wooden Dirk",
 			name_short : "WoodDirk",
-            desc : "A dagger made of wood. Lightweight and easy to use.",
+            desc : "Weapon AT 3 A dagger made of wood. Lightweight and easy to use.",
             
             atk : 3
+            
+        },
+        
+        stick : {
+			
+            id : "stick",
+			name : "Stick",
+			name_short : "Stick",
+            desc : "Weapon AT 0 Its bark is worse than its bite.",
+            
+            atk : 0
             
         },
 		
@@ -125,26 +147,21 @@ global.item = {
             def : 8
             
         },
-		
-	},
-	
-    key : {
-		
-		paper_herd : {
+        
+        bandage : {
 			
-            id : "paper_herd",
-			name : "Mysterious Paper 1",
-            desc : "A piece of paper found in the Basement that has 'green' written on it. Feels like you should tell someone this.",
+            id : "bandage",
+			name : "Bandage",
             
-            can_use : true
+            def : 0
             
         },
-        
-	}
+		
+	},
     
 }
 
-global.inventory = [global.item.food.honey_bunny, global.item.weapons.wooden_dirk, global.item.food.pie, global.item.food.terrific_cocoa, global.item.food.fanta_c, global.item.key.paper_herd]
+global.inventory = [global.item.food.honey_bunny, global.item.weapons.wooden_dirk, global.item.food.pie, global.item.food.terrific_cocoa, global.item.food.fanta_c]
 scr_updatelist(true)
 
 
@@ -161,7 +178,7 @@ global.stats = {
             at : 0,
             df : 0,
             wp : global.item.weapons.wooden_dirk,
-            ar : noone,
+            ar : global.item.armor.bandage,
             lv : 1,
             xp : 0,
             next_lv : 10,
