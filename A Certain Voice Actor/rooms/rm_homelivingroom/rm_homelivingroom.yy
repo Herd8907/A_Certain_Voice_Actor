@@ -60,8 +60,8 @@
   ],
   "name":"rm_homelivingroom",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Home",
+    "path":"folders/Rooms/Home.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

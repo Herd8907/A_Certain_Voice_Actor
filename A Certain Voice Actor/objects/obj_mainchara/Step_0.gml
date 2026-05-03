@@ -135,16 +135,16 @@ switch (mState) {
             yspd = vmove * walk_spd
             if (hmove != 0 || vmove != 0){
                 if leftbutton {
-                    facing_direction = 2
+                    facing_direction = "left"
                 }
                 if rightbutton {
-                    facing_direction = 0
+                    facing_direction = "right"
                 }
                 if upbutton {
-                    facing_direction = 1
+                    facing_direction = "up"
                 }
                 if downbutton {
-                    facing_direction = 3
+                    facing_direction = "down"
                 }
             }
             if (hmove == 0 && vmove == 0){
@@ -185,16 +185,16 @@ switch (mState) {
             yspd = vmove * run_spd
             if (hmove != 0 || vmove != 0){
                 if leftbutton {
-                    facing_direction = 2
+                    facing_direction = "left"
                 }
                 if rightbutton {
-                    facing_direction = 0
+                    facing_direction = "right"
                 }
                 if upbutton {
-                    facing_direction = 1
+                    facing_direction = "up"
                 }
                 if downbutton {
-                    facing_direction = 3
+                    facing_direction = "down"
                 }
             }
             if (hmove == 0 && vmove == 0){

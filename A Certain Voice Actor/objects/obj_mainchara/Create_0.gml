@@ -10,7 +10,7 @@ was_running = false
 
 can_move = true
 
-facing_direction = 3
+facing_direction = "down"
 
 endpress = false
 

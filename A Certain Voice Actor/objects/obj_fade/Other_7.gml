@@ -4,25 +4,25 @@ obj_mainchara.y = target_y
 
 //facing
 
-if (facing = 0) {
+if (facing = "right") {
 	
 	obj_mainchara.sprite_index = spr_friskwr
 	
 }
 
-if (facing = 1) {
+if (facing = "left") {
 	
 	obj_mainchara.sprite_index = spr_friskwl
 	
 }
 
-if (facing = 2) {
+if (facing = "down") {
 	
 	obj_mainchara.sprite_index = spr_friskwd
 	
 }
 
-if (facing = 3) {
+if (facing = "up") {
 	
 	obj_mainchara.sprite_index = spr_friskwu
 	
