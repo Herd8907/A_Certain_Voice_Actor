@@ -48,6 +48,8 @@ if file_exists(global.json) and global.new_game = false{
 }
 
 //items ------------------------------------------------------------------------------------------------------------------------------
+cap = true
+
 global.item = {
 	
 	food : {
@@ -81,7 +83,7 @@ global.item = {
 			name_short : "ButtPie",
             desc : "All HP A warm slice of Butterscotch and Cinnamon pie.",
             
-            heals : 99
+            heals : 999
             
         },
         
@@ -92,7 +94,7 @@ global.item = {
 			name_short : "FantaC",
             desc : "All HP Is this the real life? Is this just Fanta C? Increases ATTACK and DEFENSE.",
             
-            heals : 99
+            heals : 999
             
         },
         
@@ -161,7 +163,7 @@ global.item = {
     
 }
 
-global.inventory = [global.item.food.honey_bunny, global.item.weapons.wooden_dirk, global.item.food.pie, global.item.food.terrific_cocoa, global.item.food.fanta_c]
+global.inventory = [global.item.food.honey_bunny, global.item.armor.stylish_wig, global.item.weapons.wooden_dirk]
 scr_updatelist(true)
 
 
@@ -177,7 +179,7 @@ global.stats = {
             hpmax : 20,
             at : 0,
             df : 0,
-            wp : global.item.weapons.wooden_dirk,
+            wp : global.item.weapons.stick,
             ar : global.item.armor.bandage,
             lv : 1,
             xp : 0,
@@ -198,8 +200,8 @@ global.stats = {
             at : 0,
             df : 0,
             mg : 0,
-            wp : global.item.weapons.wooden_dirk,
-            ar : global.item.armor.stylish_wig,
+            wp : global.item.weapons.stick,
+            ar : global.item.armor.bandage,
             lv : 1,
             xp : 0,
             next_lv : 10,

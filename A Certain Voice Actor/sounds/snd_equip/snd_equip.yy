@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_item",
+  "%Name":"snd_equip",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":1.7142857,
   "exportDir":"",
-  "name":"snd_item",
+  "name":"snd_equip",
   "parent":{
     "name":"Sounds",
     "path":"folders/Music and Sounds/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_item.ogg",
+  "soundFile":"snd_equip.ogg",
   "volume":1.0,
 }

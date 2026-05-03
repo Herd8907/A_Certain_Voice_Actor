@@ -248,7 +248,7 @@ if menu = 1{
 	if selected < 0 {
 		selected = 3
 	}
-	if selected > 2 {
+	if selected > 3 {
 		selected = 0
 	}
 }

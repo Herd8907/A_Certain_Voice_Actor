@@ -91,37 +91,65 @@ if submenu = "stat" {
 //navigate submenu
 if submenu = "select" and selected < 1 and global.downbuttonpressed1 {
     selected++
+    scr_snd(snd_squeak)
 } else if submenu = "select" and selected > 0 and global.upbuttonpressed1 {
     selected--
+    scr_snd(snd_squeak)
 } else if submenu = "item" and selected < array_length(global.inventory) - 1 and global.downbuttonpressed1 {
     selected++
+    scr_snd(snd_squeak)
 } else if submenu = "item" and selected > 0 and global.upbuttonpressed1{
     selected--
+    scr_snd(snd_squeak)
 } else if submenu = "item_options" and selected < 2 and global.rightbuttonpressed1 {
     selected++
+    scr_snd(snd_squeak)
 } else if submenu = "item_options" and selected > 0 and global.leftbuttonpressed1 {
     selected--
+    scr_snd(snd_squeak)
 }
 
 if submenu = "select" and selected = 0 and global.selectbuttonpressed { //select to item
     submenu = "item"
+    scr_snd(snd_squeak)
     can_close = false
 } else if submenu = "item" and global.cancelbuttonpressed { //item to select
     submenu = "select"
+    scr_snd(snd_squeak)
     selected = 0
 } else if submenu = "select" and selected = 1 and global.selectbuttonpressed { //select to stat
     submenu = "stat"
+    scr_snd(snd_squeak)
     can_close = false
 } else if submenu = "stat" and global.cancelbuttonpressed { //stat to select
     submenu = "select"
+    scr_snd(snd_squeak)
 } else if submenu = "item" and global.selectbuttonpressed { //item to item options
     submenu = "item_options"
+    scr_snd(snd_squeak)
     selected_item = selected
     selected = 0
     can_close = false
 } else if submenu = "item_options" and global.cancelbuttonpressed { //item options to item
     submenu = "item"
+    scr_snd(snd_squeak)
     selected = selected_item
+} else if submenu = "item_options" and selected = 0 and global.selectbuttonpressed {
+    if struct_exists(global.item.food, global.inv[selected_item]) { //food
+        scr_eat(selected_item)
+        close = true
+    } else if struct_exists(global.item.weapons, global.inv[selected_item]) { //weapon
+        scr_equip_weapon(selected_item)
+        scr_snd(snd_equip)
+        close = true
+    } else if struct_exists(global.item.armor, global.inv[selected_item]) { //armor
+        scr_equip_armor(selected_item)
+        scr_snd(snd_equip)
+        close = true
+    }
+} else if submenu = "item_options" and selected = 2 and global.selectbuttonpressed {
+    scr_item_delete(selected_item)
+    close = true
 }
 
 //update soul pos
@@ -159,7 +187,8 @@ if submenu != "stat" {
 }
 
 //destroy
-if global.cancelbuttonpressed and can_close = true {
+if global.cancelbuttonpressed and can_close or close{
     obj_mainchara.can_move = true
+    scr_snd(snd_squeak)
     instance_destroy()
 }

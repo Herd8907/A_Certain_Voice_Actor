@@ -1,3 +1,7 @@
+if file_exists(global.json) {
+    instance_create_depth(x, y, depth, obj_buttons_continue)
+} else if !file_exists(global.json) {}
+
 //slide on screen
 if (x < 10) {
 	

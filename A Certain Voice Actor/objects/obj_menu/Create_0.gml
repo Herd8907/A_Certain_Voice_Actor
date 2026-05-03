@@ -30,18 +30,18 @@ money_off = 1
 
 //text
 name = global.name
-lv = 1
-hp = 20
-hpmax = 20
-money = 0
-at = 0
-weapon_at = 3
-df = 0
-armor_df = 8
-xp = 0
-next_lv = 10
-wp = global.item.weapons.wooden_dirk
-ar = global.item.armor.stylish_wig
+lv = global.stats.under.mainchara.lv
+hp = global.stats.under.mainchara.hp
+hpmax = global.stats.under.mainchara.hpmax
+money = global.stats.under.mainchara.money
+at = global.stats.under.mainchara.at
+weapon_at = 0
+df = global.stats.under.mainchara.df
+armor_df = 0
+xp = global.stats.under.mainchara.xp
+next_lv = global.stats.under.mainchara.next_lv
+wp = global.stats.under.mainchara.wp
+ar = global.stats.under.mainchara.ar
 
 //select
 selected = 0
@@ -61,3 +61,4 @@ soul_y = soul_y_left
 
 //close
 can_close = true
+close = false
