@@ -32,20 +32,20 @@ var idling = xspd == 0 && yspd == 0;
 var running = move_spd == run_spd;
 var wearing_wig = global.stats.under.mainchara.ar == global.item.armor.stylish_wig;
 
-/*if (xspd > 0) {
-    facing_direction = 0;
+if (xspd > 0) {
+    facing_direction = "right";
 }
 else if (xspd < 0) {
-    facing_direction = 2;
+    facing_direction = "left";
 }
 else if (yspd < 0) {
-    facing_direction = 1;
+    facing_direction = "down";
 }
 else if (yspd > 0) {
-    facing_direction = 3;
+    facing_direction = "up";
 }
 
-if (running) {
+/*if (running) {
     switch (facing_direction) {
         case 0:
             sprite_index = wearing_wig ? spr_friskwigrr : spr_friskrr;

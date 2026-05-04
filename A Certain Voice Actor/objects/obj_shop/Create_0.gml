@@ -24,7 +24,7 @@ items = {
     
     honey_bunny : {
         
-        name : "Wooden Dirk",
+        name : "Honey Bunny",
         price : 25,
         type : "food",
         stat : global.item.food.honey_bunny.heals,
@@ -190,3 +190,59 @@ herd = {
     }
     
 }
+
+scr_keeper()
+
+switch keeper{
+    
+    case herd:
+        stock = [
+            items.wooden_dirk,
+            items.stylish_wig,
+            items.honey_bunny,
+            items.terrific_cocoa
+        ]
+        chat = [
+            herd.lines.talk_hello,
+            herd.lines.talk_hacma,
+            herd.lines.talk_mick,
+            herd.lines.talk_fight
+        ]
+        break
+    
+}
+
+box = spr_simplebox_thick
+anim = -1
+
+star = "*"
+
+options = [
+    "Buy",
+    "Sell",
+    "Talk",
+    "Exit"
+]
+yn = [
+    "Yes",
+    "No"
+]
+
+menu = "select"
+welcome = true
+selected = 0
+soul = spr_soulsmall
+menu_timer = 1
+page = 0
+buy_flavor = "default"
+selected_yn = 0
+
+ref_count = 1
+talk_count = [1, 1, 1, 1]
+talk_count_new = [1, 1, 1, 1]
+talk_col = c_white
+is_new = [false, false, false, false]
+
+exit_timer = 1
+obj_mainchara.can_move = false
+obj_mainchara.y -= 50

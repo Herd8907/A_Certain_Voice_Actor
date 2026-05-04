@@ -228,6 +228,7 @@
     {"id":{"name":"spr_poorhammer","path":"sprites/spr_poorhammer/spr_poorhammer.yy",},},
     {"id":{"name":"spr_save","path":"sprites/spr_save/spr_save.yy",},},
     {"id":{"name":"spr_shortrail","path":"sprites/spr_shortrail/spr_shortrail.yy",},},
+    {"id":{"name":"spr_simplebox_thick","path":"sprites/spr_simplebox_thick/spr_simplebox_thick.yy",},},
     {"id":{"name":"spr_simplebox","path":"sprites/spr_simplebox/spr_simplebox.yy",},},
     {"id":{"name":"spr_soulsmall","path":"sprites/spr_soulsmall/spr_soulsmall.yy",},},
     {"id":{"name":"spr_soundboothorwhatever","path":"sprites/spr_soundboothorwhatever/spr_soundboothorwhatever.yy",},},
