@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Music and Sounds","folderPath":"folders/Music and Sounds.yy","name":"Music and Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Songs","folderPath":"folders/Music and Sounds/Songs.yy","name":"Songs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Music and Sounds/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -66,6 +67,7 @@
   },
   "name":"A Certain Voice Actor",
   "resources":[
+    {"id":{"name":"ac_buy_popup","path":"animcurves/ac_buy_popup/ac_buy_popup.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"center","path":"objects/center/center.yy",},},
@@ -115,6 +117,7 @@
     {"id":{"name":"scr_updatecontrols","path":"scripts/scr_updatecontrols/scr_updatecontrols.yy",},},
     {"id":{"name":"scr_updatelist","path":"scripts/scr_updatelist/scr_updatelist.yy",},},
     {"id":{"name":"snd_alert","path":"sounds/snd_alert/snd_alert.yy",},},
+    {"id":{"name":"snd_buyitem","path":"sounds/snd_buyitem/snd_buyitem.yy",},},
     {"id":{"name":"snd_cymbal","path":"sounds/snd_cymbal/snd_cymbal.yy",},},
     {"id":{"name":"snd_equip","path":"sounds/snd_equip/snd_equip.yy",},},
     {"id":{"name":"snd_heal","path":"sounds/snd_heal/snd_heal.yy",},},

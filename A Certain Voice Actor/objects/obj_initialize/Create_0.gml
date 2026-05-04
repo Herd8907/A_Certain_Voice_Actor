@@ -6,6 +6,7 @@ global.new_game = true
 global.start_room = 1
 global.start_x = 160
 global.start_y = 180
+global.facing = "down"
 
 global.name = ""
 

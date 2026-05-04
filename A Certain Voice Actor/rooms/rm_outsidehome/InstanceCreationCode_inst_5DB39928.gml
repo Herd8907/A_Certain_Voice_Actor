@@ -1,6 +1,6 @@
 target_x = 160
 target_y = 210
-target_room = rm_homeentrance
+target_room = rm_shop_herd
 facing = "up"
 //0 = right
 //1 = left

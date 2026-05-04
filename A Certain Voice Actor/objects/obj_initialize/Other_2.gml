@@ -36,6 +36,7 @@ if file_exists(global.json) {
         global.start_room = asset_get_index(slot.game.rm)
         global.start_x = slot.mainchara.mainchara_x
         global.start_y = slot.mainchara.mainchara_y
+        global.facing = slot.mainchara.facing
     }
 }
 global.slots = slots

@@ -46,10 +46,10 @@ ChangeState = function(nextState) {
 
 scr_face_to_string = function(){
   switch(facing_direction){
-    case 0: return "right";
-    case 1: return "up";
-    case 2: return "left";
-    case 3: return "down";
+    case "right": return "right";
+    case "up": return "up";
+    case "left": return "left";
+    case "down": return "down";
   }
 }
 

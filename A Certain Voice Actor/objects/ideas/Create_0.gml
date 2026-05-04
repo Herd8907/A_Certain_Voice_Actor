@@ -36,6 +36,4 @@ Outside house have some of the people who helped a lot like Flappy (duh) and eit
 and people who just have to be in the mod like Indie and hater and Yosh (can i reach out to them?)
 
 
-
-
 */

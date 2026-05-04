@@ -212,7 +212,7 @@ switch keeper{
     
 }
 
-box = spr_simplebox_thick
+box = spr_simplebox
 anim = -1
 
 star = "*"
@@ -242,6 +242,14 @@ talk_count = [1, 1, 1, 1]
 talk_count_new = [1, 1, 1, 1]
 talk_col = c_white
 is_new = [false, false, false, false]
+
+curve = animcurve_get_channel(ac_buy_popup, "curve1")
+percent = 0
+pos = animcurve_channel_evaluate(curve, percent)
+info_top = 39
+info_bottom = 123
+dist = info_bottom - info_top
+info_y = info_bottom - (dist * pos)
 
 exit_timer = 1
 obj_mainchara.can_move = false
