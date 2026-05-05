@@ -423,7 +423,7 @@ if menu = "talk"{
     for(var i = 0; i < array_length(opts); i++){
         var new_txt = ""
         if chat[i] != struct_get(keeper.lines, orig_chat[i]) and is_new[i] and i < array_length(opts){
-            talk_col = #189BCC
+            talk_col = #5CFA62
             new_txt = " (NEW)"
         } else{
         	talk_col = c_white
@@ -514,7 +514,7 @@ if menu = "exit"{
     }
     
     if global.selectbuttonpressed and exit_timer <= 0{
-        scr_warp(keeper.warp_rm, keeper.warp_x, keeper.warp_y, keeper.warp_facing)
+        scr_warp(rm_outsidehome, 88, 134, "up")
     }
     exit_timer--
 }

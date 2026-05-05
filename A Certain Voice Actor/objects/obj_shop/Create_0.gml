@@ -186,7 +186,10 @@ herd = {
                 "Ah fuck it, why not?"
             ],
             [
-                "Just make sure you've done your stuff with Mick,\nThen come back to me again when you're ready."
+                "Just make sure you've done your\nstuff with Mick.",
+            ],
+            [
+                "Then come back to me again when\nyou're ready."
             ]
         ],
         talk_fight_new : [
@@ -195,6 +198,7 @@ herd = {
                 "Let's hope you prepared enough for this..."
             ]
         ],
+        talk_fight_new_name : "Ready to Fight?",
         refuse_buy : [
             [
                 "Bro are you kidding me in THIS economy?",
@@ -205,7 +209,7 @@ herd = {
         warp_rm : rm_outsidehome,
         warp_x : 77,
         warp_y : 134,
-        warp_facing: 3
+        warp_facing: "up"
         
     }
     

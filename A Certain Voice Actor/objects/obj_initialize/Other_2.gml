@@ -97,18 +97,7 @@ global.item = {
             
             heals : 999
             
-        },
-        
-        bandage : {
-			
-            id : "bandage",
-			name : "Bandage",
-			name_short : "Bandage",
-            desc : "Heals 10 HP It has already been used several times.",
-            
-            heals : 10
-            
-        },
+        }
 		
 	},
 	
@@ -161,6 +150,20 @@ global.item = {
         },
 		
 	},
+    
+    key : {
+        
+        used_bandage : {
+            
+            id : "used_bandage",
+            name : "Used Bandage",
+            desc : "A used bandage. Literally worthless.",
+            
+            can_use : true
+            
+        }
+        
+    }
     
 }
 
