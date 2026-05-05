@@ -164,7 +164,7 @@ global.item = {
     
 }
 
-global.inventory = [global.item.food.honey_bunny, global.item.armor.stylish_wig, global.item.weapons.wooden_dirk]
+global.inventory = []
 scr_updatelist(true)
 
 
@@ -185,7 +185,7 @@ global.stats = {
             lv : 1,
             xp : 0,
             next_lv : 10,
-            money : 0
+            money : 500
             
         }
         

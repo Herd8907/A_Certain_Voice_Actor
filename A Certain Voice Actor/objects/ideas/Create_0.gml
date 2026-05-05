@@ -36,4 +36,14 @@ Outside house have some of the people who helped a lot like Flappy (duh) and eit
 and people who just have to be in the mod like Indie and hater and Yosh (can i reach out to them?)
 
 
+___________________________________________
+############################################################################################
+ERROR in action number 1
+of Draw Event for object obj_shop:
+Variable <unknown_object>.warp_facing(100332, -2147483648) not set before reading it.
+ at gml_Object_obj_shop_Draw_0 (line 517) -         scr_warp(keeper.warp_rm, keeper.warp_x, keeper.warp_y, keeper.warp_facing)
+############################################################################################
+gml_Object_obj_shop_Draw_0 (line 517)
+
+
 */

@@ -10,8 +10,8 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Music and Sounds","folderPath":"folders/Music and Sounds.yy","name":"Music and Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Songs","folderPath":"folders/Music and Sounds/Songs.yy","name":"Songs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Music and Sounds/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -116,6 +116,7 @@
     {"id":{"name":"scr_sprite_swap","path":"scripts/scr_sprite_swap/scr_sprite_swap.yy",},},
     {"id":{"name":"scr_updatecontrols","path":"scripts/scr_updatecontrols/scr_updatecontrols.yy",},},
     {"id":{"name":"scr_updatelist","path":"scripts/scr_updatelist/scr_updatelist.yy",},},
+    {"id":{"name":"scr_warp","path":"scripts/scr_warp/scr_warp.yy",},},
     {"id":{"name":"snd_alert","path":"sounds/snd_alert/snd_alert.yy",},},
     {"id":{"name":"snd_buyitem","path":"sounds/snd_buyitem/snd_buyitem.yy",},},
     {"id":{"name":"snd_cymbal","path":"sounds/snd_cymbal/snd_cymbal.yy",},},

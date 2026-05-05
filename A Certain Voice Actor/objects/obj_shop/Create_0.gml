@@ -28,7 +28,7 @@ items = {
         price : 25,
         type : "food",
         stat : global.item.food.honey_bunny.heals,
-        desc : "Made it myself!\n(lie)",
+        desc : "Made it\nmyself! (lie)",
         item : global.item.food.honey_bunny
         
     },
@@ -72,12 +72,12 @@ herd = {
             "Stop by later."
         ],
         buy : "Whatchu\nwanna buy?",
-        thanks : "Thanks\na lot\nlol",
+        thanks : "Thanks a lot\npartner.",
         broke : "Twin is\nme fr\n(brokey)",
-        full : "There's a\nbox right\nthere y'know",
+        full : "There's a\nbox right\nthere y'know.",
         looking : "Snooping\nas usual I\nsee?",
         random_flavor : [
-            "tbh i'm\nkinda bored\nhurry up"
+            "tbh i'm kinda bored hurry\nup."
         ],
         talk_flavor : "Wanna chat?",
         talk_options : [
@@ -97,52 +97,73 @@ herd = {
                 "......"
             ],
             [
-                "........."
+                "............"
             ],
             [
-                "..................?"
+                "........................?"
             ],
             [
-                "Bro PLEASE stop staring at me 💔"
+                "Bro PLEASE stop staring at me\n:heartbreak:"
             ]
         ],
         talk_hacma : [
             [
-                "The Cancellings and ACMA? Those guys are great.",
-                "They're all funny and clever and\nput so much dedication and love\nInto hating or defending."
+                "The Cancellings and ACMA?",
+                "Those guys are great."
             ],
             [
-                "Even though Hater ran out of ideas\naround episode 7."
+                "They're all so funny and clever\nand put so much dedication and love\ninto hating or defending respectfully.",
             ],
             [
-                "And made ME do most of the accusations.",
+                "Even though Hater ran out of ideas\naround episode 7..."  
+            ],
+            [
+                "And made ME do most of the accusations...",
+            ],
+            [
                 "He's still an amazing boss and friend."
             ],
             [
-                "Even though Averie is on the opposite team,",
+                "And even though Averie is on the\nopposite team...",
+            ],
+            [
                 "I can't really hate them."
             ],
             [
-                "It takes a lot of guts to stand\nagainst a big established thing."
+                "It takes a lot of guts to do what\nyou think is right."
             ],
             [
-                "In my opinion everyone who worked on Hacma stuff,",
-                "Deserves anything they can get their hands on."
+                "In my opinion everyone who\nworked on Hacma stuff...",
+            ],
+            [
+                "Deserves anything they can get\ntheir hands on."
+            ],
+            [
+                "..."
+            ],
+            [
+                "Damn that was corny."
             ]
         ],
         talk_mick : [
             [
-                "Mickerrific? The community or the person?"
+                "Mickerrific?",
+                "The person or the community?"
             ],
             [
-                "Seeing as this is a one way dialogue choice,",
-                "I'll just do both. Let's do the community first."
+                "Seeing as this is a one way dialogue,",
+                "I'll just do both."
             ],
             [
-                "This community is amazing. A bit...\"" + "hyper" + "\" sometimes..."
+                "Let's do the community first."
             ],
             [
-                "But amazing nonetheless.\nI wouldn't trade this community for anything."
+                "This community is amazing.",
+                "A bit...\"" + "hyper" + "\" sometimes..."
+            ],
+            [
+                "But amazing nonetheless.",
+                "I wouldn't trade this community\nfor anything."
             ],
             [
                 "Mick on the other hand is a terrible,"
@@ -151,13 +172,12 @@ herd = {
                 "Irredeemable,"
             ],
             [
-                "HORRIFIC person who 100% deserves to be cancelled."
+                "HORRIFIC person who 100% deserves\nto be cancelled."
             ]
         ],
         talk_fight : [
             [
-                "Fight me?",
-                "Are you sure?"
+                "Fight me? Are you sure?"
             ],
             [
                 "Hm..."
@@ -166,8 +186,7 @@ herd = {
                 "Ah fuck it, why not?"
             ],
             [
-                "Just make sure you've done your\nstuff with Mick,",
-                "Then come back to me again when you're ready."
+                "Just make sure you've done your stuff with Mick,\nThen come back to me again when you're ready."
             ]
         ],
         talk_fight_new : [
@@ -178,14 +197,15 @@ herd = {
         ],
         refuse_buy : [
             [
-                "Bro hell nah I'm\npoor too 💔"
+                "Bro are you kidding me in THIS economy?",
+                "You'd have to kill me before I waste\nmoney on stuff I just sold you."
             ]
         ],
         
         warp_rm : rm_outsidehome,
         warp_x : 77,
         warp_y : 134,
-        warp_facing: "up"
+        warp_facing: 3
         
     }
     
@@ -228,6 +248,22 @@ yn = [
     "No"
 ]
 
+orig_chat = []
+var all_lines = struct_get_names(keeper.lines)
+for(var i = 0; i < array_length(all_lines); i++){
+    if array_contains(chat, variable_instance_get(keeper.lines, all_lines[i])){
+        array_resize(orig_chat, array_length(orig_chat))
+        orig_chat[i] = all_lines[i]
+    }
+}
+for(var i = 0; i < array_length(orig_chat); i++){
+    if orig_chat[i] = 0{
+        array_delete(orig_chat, i, 1)
+        i--
+    }
+}
+new_chat = variable_clone(orig_chat)
+
 menu = "select"
 welcome = true
 selected = 0
@@ -242,6 +278,23 @@ talk_count = [1, 1, 1, 1]
 talk_count_new = [1, 1, 1, 1]
 talk_col = c_white
 is_new = [false, false, false, false]
+
+no_sell = [global.item]
+sellable = []
+link = []
+col = "left"
+ex = false
+selling = false
+
+for(var i = 0; i < array_length(global.inventory); i++){
+    if !array_contains(no_sell, global.inventory[i]){
+        array_resize(sellable, array_length(sellable) + 1)
+        len = array_length(sellable) - 1
+        sellable[len] = global.inventory[i]
+        array_resize(link, array_length(sellable))
+        link[len] = i
+    }
+}
 
 curve = animcurve_get_channel(ac_buy_popup, "curve1")
 percent = 0
