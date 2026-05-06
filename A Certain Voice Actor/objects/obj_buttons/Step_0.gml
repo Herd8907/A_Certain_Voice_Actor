@@ -1,5 +1,6 @@
 if file_exists(global.json) {
     instance_create_depth(x, y, depth, obj_buttons_continue)
+    instance_destroy(obj_buttons)
 } else if !file_exists(global.json) {}
 
 //slide on screen

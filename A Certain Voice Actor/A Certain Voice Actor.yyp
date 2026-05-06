@@ -29,6 +29,7 @@
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Battle","folderPath":"folders/Sprites/Battle.yy","name":"Battle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Deltarune","folderPath":"folders/Sprites/Battle/Deltarune.yy","name":"Deltarune","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Herd","folderPath":"folders/Sprites/Battle/Herd.yy","name":"Herd","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Undertale","folderPath":"folders/Sprites/Battle/Undertale.yy","name":"Undertale","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Characters","folderPath":"folders/Sprites/Characters.yy","name":"Characters","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Frisk","folderPath":"folders/Sprites/Characters/Frisk.yy","name":"Frisk","resourceType":"GMFolder","resourceVersion":"2.0",},

@@ -149,21 +149,7 @@ global.item = {
             
         },
 		
-	},
-    
-    key : {
-        
-        used_bandage : {
-            
-            id : "used_bandage",
-            name : "Used Bandage",
-            desc : "A used bandage. Literally worthless.",
-            
-            can_use : true
-            
-        }
-        
-    }
+	}
     
 }
 
@@ -188,7 +174,7 @@ global.stats = {
             lv : 1,
             xp : 0,
             next_lv : 10,
-            money : 500
+            money : 0
             
         }
         
