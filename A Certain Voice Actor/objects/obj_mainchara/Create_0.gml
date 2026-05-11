@@ -5,7 +5,7 @@ yspd = 0
 
 move_spd = 2.5
 walk_spd = 2.5
-run_spd = 5
+run_spd = 6
 was_running = false
 
 can_move = true
