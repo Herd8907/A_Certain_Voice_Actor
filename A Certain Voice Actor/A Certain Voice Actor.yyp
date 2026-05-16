@@ -232,6 +232,7 @@
     {"id":{"name":"spr_mirrorfloor","path":"sprites/spr_mirrorfloor/spr_mirrorfloor.yy",},},
     {"id":{"name":"spr_outsidehome","path":"sprites/spr_outsidehome/spr_outsidehome.yy",},},
     {"id":{"name":"spr_pens","path":"sprites/spr_pens/spr_pens.yy",},},
+    {"id":{"name":"spr_phoboz","path":"sprites/spr_phoboz/spr_phoboz.yy",},},
     {"id":{"name":"spr_poorhammer","path":"sprites/spr_poorhammer/spr_poorhammer.yy",},},
     {"id":{"name":"spr_save","path":"sprites/spr_save/spr_save.yy",},},
     {"id":{"name":"spr_shortrail","path":"sprites/spr_shortrail/spr_shortrail.yy",},},
