@@ -252,7 +252,6 @@
     {"id":{"name":"spr_warp","path":"sprites/spr_warp/spr_warp.yy",},},
     {"id":{"name":"spr_weezerpog","path":"sprites/spr_weezerpog/spr_weezerpog.yy",},},
     {"id":{"name":"spr_whitefade","path":"sprites/spr_whitefade/spr_whitefade.yy",},},
-    {"id":{"name":"Sprite105","path":"sprites/Sprite105/Sprite105.yy",},},
     {"id":{"name":"ts_basement","path":"tilesets/ts_basement/ts_basement.yy",},},
     {"id":{"name":"ts_streamingroom","path":"tilesets/ts_streamingroom/ts_streamingroom.yy",},},
   ],
