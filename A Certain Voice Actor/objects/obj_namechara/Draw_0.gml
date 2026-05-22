@@ -1,5 +1,6 @@
-//draw black rect bg
+/*/draw black rect bg
 draw_rectangle_color(0, 0, 400, 400, c_black, c_black, c_black, c_black, false)
+*/
 
 //set text draw values
 draw_set_font(fnt_main)

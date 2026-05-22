@@ -59,6 +59,7 @@
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Home.mid","CopyToMask":-1,"filePath":"datafiles","name":"Home.mid","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"space-heads_eNZTuBLC.mp4","CopyToMask":-1,"filePath":"datafiles","name":"space-heads_eNZTuBLC.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -72,6 +73,7 @@
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"center","path":"objects/center/center.yy",},},
     {"id":{"name":"ideas","path":"objects/ideas/ideas.yy",},},
+    {"id":{"name":"obj_background","path":"objects/obj_background/obj_background.yy",},},
     {"id":{"name":"obj_buttons_continue","path":"objects/obj_buttons_continue/obj_buttons_continue.yy",},},
     {"id":{"name":"obj_buttons","path":"objects/obj_buttons/obj_buttons.yy",},},
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},},
