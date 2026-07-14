@@ -1,5 +1,5 @@
 //slide on screen
-if(y < 36.5){
+if(y < 37){
     
 	y += 1
     

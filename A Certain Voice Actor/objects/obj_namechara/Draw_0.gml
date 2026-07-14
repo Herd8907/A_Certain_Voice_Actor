@@ -118,7 +118,9 @@ if stage = 1 { //typing the name stage
         
         if global.selectbuttonpressed {
             
+            global.selectbuttonpressed = false
             instance_create_depth(159, 37, 100, obj_title)
+            instance_destroy(obj_title)
             instance_destroy()
             
         }

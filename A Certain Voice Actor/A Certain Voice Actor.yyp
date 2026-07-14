@@ -99,6 +99,7 @@
     {"id":{"name":"rm_homekitchen","path":"rooms/rm_homekitchen/rm_homekitchen.yy",},},
     {"id":{"name":"rm_homelivingroom","path":"rooms/rm_homelivingroom/rm_homelivingroom.yy",},},
     {"id":{"name":"rm_homenursery","path":"rooms/rm_homenursery/rm_homenursery.yy",},},
+    {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"id":{"name":"rm_outsidehome","path":"rooms/rm_outsidehome/rm_outsidehome.yy",},},
     {"id":{"name":"rm_shop_herd","path":"rooms/rm_shop_herd/rm_shop_herd.yy",},},
     {"id":{"name":"rm_streamingroom","path":"rooms/rm_streamingroom/rm_streamingroom.yy",},},
@@ -260,6 +261,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_homeentrance","path":"rooms/rm_homeentrance/rm_homeentrance.yy",},},
     {"roomId":{"name":"rm_homelivingroom","path":"rooms/rm_homelivingroom/rm_homelivingroom.yy",},},

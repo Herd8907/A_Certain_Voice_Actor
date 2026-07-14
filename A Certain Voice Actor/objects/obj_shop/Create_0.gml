@@ -68,11 +68,11 @@ herd = {
             "What's up?"
         ],
         outro : [
-            "See ya partner.",
+            "See ya.",
             "Stop by later."
         ],
-        buy : "Whatchu\nwanna buy?",
-        thanks : "Thanks a lot\npartner.",
+        buy : "Whatcha\nwanna buy?",
+        thanks : "Thanks a lot\nman.",
         broke : "Twin is\nme fr\n(brokey)",
         full : "There's a\nbox right\nthere y'know.",
         looking : "Snooping\nas usual I\nsee?",

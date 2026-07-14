@@ -58,6 +58,7 @@ function scr_save(slot = global.slot, snd = false){
             
             at : global.stats.under.mainchara.at,
             df : global.stats.under.mainchara.df,
+            mg: global.stats.under.mainchara.mg,
             wp : global.stats.under.mainchara.wp.id,
             ar : global.stats.under.mainchara.ar.id,
             money : global.stats.under.mainchara.money,

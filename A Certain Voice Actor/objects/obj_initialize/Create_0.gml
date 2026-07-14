@@ -3,7 +3,7 @@ global.slot = 1
 global.new_game = true
 
 //variable
-global.start_room = 1
+global.start_room = 2
 global.start_x = 160
 global.start_y = 180
 global.facing = "down"

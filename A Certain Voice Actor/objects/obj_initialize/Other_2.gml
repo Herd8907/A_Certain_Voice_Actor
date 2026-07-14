@@ -169,6 +169,7 @@ global.stats = {
             hpmax : 20,
             at : 0,
             df : 0,
+            mg : 0,
             wp : global.item.weapons.stick,
             ar : global.item.armor.bandage,
             lv : 1,
@@ -207,6 +208,7 @@ global.stats = {
             hpmax : 90,
             at : 10,
             df : 2,
+            mg: 4,
             lv : 1,
             xp : 0,
             next_lv : 10,
@@ -215,13 +217,14 @@ global.stats = {
             
         },
         
-        hator : {
+        hater : {
             
-            name : "Hator",
+            name : "Hater",
             hp : 110,
             hpmax : 110,
             at : 14,
             df : 2,
+            mg: 3,
             lv : 1,
             xp : 0,
             next_lv : 10,
@@ -239,22 +242,11 @@ global.stats = {
         hp : 680,
         at : 8,
         df : 2,
-        xp_gain : 0,
-        money_gain : 0
-        
-    },
-    
-    herd : {
-        
-        name : "Herd",
-        hp : 30,
-        at : 5,
-        df : 5,
+        mg: 0,
         xp_gain : 0,
         money_gain : 0
         
     }
-    
 }
 
 if file_exists(global.json) and global.new_game = false {
@@ -262,6 +254,7 @@ if file_exists(global.json) and global.new_game = false {
     global.stats.under.mainchara.hpmax = slot.mainchara.hp_max
     global.stats.under.mainchara.at = slot.mainchara.at
     global.stats.under.mainchara.df = slot.mainchara.df
+    global.stats.under.mainchara.mg = slot.mainchara.mg
     global.stats.under.mainchara.wp = scr_equippable_id_convert(slot.mainchara.wp)
     global.stats.under.mainchara.ar = scr_equippable_id_convert(slot.mainchara.ar)
     global.stats.under.mainchara.lv = slot.mainchara.lv
@@ -269,3 +262,5 @@ if file_exists(global.json) and global.new_game = false {
     global.stats.under.mainchara.money = slot.mainchara.money
     global.stats.under.mainchara.next_lv = 10 //will be calculated in later vid
 }
+
+room_goto(rm_title)

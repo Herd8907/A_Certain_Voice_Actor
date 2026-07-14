@@ -38,6 +38,7 @@ at = global.stats.under.mainchara.at
 weapon_at = 0
 df = global.stats.under.mainchara.df
 armor_df = 0
+mg = global.stats.under.mainchara.mg
 xp = global.stats.under.mainchara.xp
 next_lv = global.stats.under.mainchara.next_lv
 wp = global.stats.under.mainchara.wp
