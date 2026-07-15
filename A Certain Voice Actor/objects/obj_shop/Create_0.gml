@@ -64,7 +64,7 @@ herd = {
     lines : {
         
         intro : [
-            "Howdy \"" + global.name + "\".",
+            "Howdy " + global.name + ".",
             "What's up?"
         ],
         outro : [
@@ -84,7 +84,7 @@ herd = {
             "Say Hello",
             "Hacma",
             "Mickerrific",
-            "Fight him"
+            "Battle Style"
         ],
         talk_hello : [
             [
@@ -175,30 +175,39 @@ herd = {
                 "HORRIFIC person who 100% deserves\nto be cancelled."
             ]
         ],
-        talk_fight : [
+        talk_battle_style : [
             [
-                "Fight me? Are you sure?"
+                "Congrats you just changed the battle\nstyle to Deltarune!"
             ],
             [
-                "Hm..."
+                "You weren't thinking it but the attacks\nARE different!"
             ],
             [
-                "Ah fuck it, why not?"
+                "And who knows, you might even see a\nfew familiar faces."
             ],
             [
-                "Just make sure you've done your\nstuff with Mick.",
-            ],
-            [
-                "Then come back to me again when\nyou're ready."
+                "(You can change back to Undertale\nStyle by talking to them again.)"
             ]
         ],
-        talk_fight_new : [
+        talk_battle_style_new : [
             [
-                "You ready?",
-                "Let's hope you prepared enough for this..."
+                "Congrats you just changed the battle\nstyle back to Undertale!"
+            ],
+            [
+                "If you for some reason did the\nDeltarune fight first..."
+            ],
+            [
+                "Uh..."
+            ],
+            [
+                "Shame on you."
+            ],
+            [
+                "(You can change into the Deltarune\nStyle by talking to them again.)"
             ]
         ],
-        talk_fight_new_name : "Ready to Fight?",
+        talk_battle_style_new_name : "Battle Style",
+        
         refuse_buy : [
             [
                 "Bro are you kidding me in THIS economy?",
@@ -230,7 +239,7 @@ switch keeper{
             herd.lines.talk_hello,
             herd.lines.talk_hacma,
             herd.lines.talk_mick,
-            herd.lines.talk_fight
+            herd.lines.talk_battle_style
         ]
         break
     

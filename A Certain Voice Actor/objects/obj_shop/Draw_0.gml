@@ -423,7 +423,7 @@ if menu = "talk"{
     for(var i = 0; i < array_length(opts); i++){
         var new_txt = ""
         if chat[i] != struct_get(keeper.lines, orig_chat[i]) and is_new[i] and i < array_length(opts){
-            talk_col = #5CFA62
+            talk_col = #189BCC
             new_txt = " (NEW)"
         } else{
         	talk_col = c_white

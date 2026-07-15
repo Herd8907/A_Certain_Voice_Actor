@@ -5,6 +5,7 @@ if room == rm_homeentrance
 || room == rm_homehallway
 || room == rm_homenursery
 || room == rm_homebigbedroom
+|| room == rm_shop_herd
 {
 	
 	set_song_ingame(sng_home, 0, 0)
