@@ -152,6 +152,7 @@
     {"id":{"name":"spr_blackcover","path":"sprites/spr_blackcover/spr_blackcover.yy",},},
     {"id":{"name":"spr_bluecactus","path":"sprites/spr_bluecactus/spr_bluecactus.yy",},},
     {"id":{"name":"spr_bluechair","path":"sprites/spr_bluechair/spr_bluechair.yy",},},
+    {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
     {"id":{"name":"spr_chairiel","path":"sprites/spr_chairiel/spr_chairiel.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
     {"id":{"name":"spr_deltaaveriehud","path":"sprites/spr_deltaaveriehud/spr_deltaaveriehud.yy",},},

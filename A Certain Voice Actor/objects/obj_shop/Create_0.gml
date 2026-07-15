@@ -177,36 +177,9 @@ herd = {
         ],
         talk_battle_style : [
             [
-                "Congrats you just changed the battle\nstyle to Deltarune!"
+                "If you didn't see it before you came\nto me, there's a little thingy in the top\nleft of the room that let's\nyou change the battle style!"
             ],
-            [
-                "You weren't thinking it but the attacks\nARE different!"
-            ],
-            [
-                "And who knows, you might even see a\nfew familiar faces."
-            ],
-            [
-                "(You can change back to Undertale\nStyle by talking to them again.)"
-            ]
         ],
-        talk_battle_style_new : [
-            [
-                "Congrats you just changed the battle\nstyle back to Undertale!"
-            ],
-            [
-                "If you for some reason did the\nDeltarune fight first..."
-            ],
-            [
-                "Uh..."
-            ],
-            [
-                "Shame on you."
-            ],
-            [
-                "(You can change into the Deltarune\nStyle by talking to them again.)"
-            ]
-        ],
-        talk_battle_style_new_name : "Battle Style",
         
         refuse_buy : [
             [
