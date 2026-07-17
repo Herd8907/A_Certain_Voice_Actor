@@ -63,130 +63,22 @@ herd = {
     
     lines : {
         
-        intro : [
-            "Howdy " + global.name + ".",
-            "What's up?"
-        ],
-        outro : [
-            "See ya.",
-            "Stop by later."
-        ],
-        buy : "Whatcha\nwanna buy?",
-        thanks : "Thanks a lot\nman.",
-        broke : "Twin is\nme fr\n(brokey)",
-        full : "There's a\nbox right\nthere y'know.",
-        looking : "Snooping\nas usual I\nsee?",
-        random_flavor : [
-            "tbh i'm kinda bored hurry\nup."
-        ],
-        talk_flavor : "Wanna chat?",
-        talk_options : [
-            "Say Hello",
-            "Hacma",
-            "Mickerrific",
-            "Battle Style"
-        ],
-        talk_hello : [
-            [
-                "Howdy!"
-            ],
-            [
-                "..."
-            ],
-            [
-                "......"
-            ],
-            [
-                "............"
-            ],
-            [
-                "........................?"
-            ],
-            [
-                "Bro PLEASE stop staring at me\n:heartbreak:"
-            ]
-        ],
-        talk_hacma : [
-            [
-                "The Cancellings and ACMA?",
-                "Those guys are great."
-            ],
-            [
-                "They're all so funny and clever\nand put so much dedication and love\ninto hating or defending respectfully.",
-            ],
-            [
-                "Even though Hater ran out of ideas\naround episode 7..."  
-            ],
-            [
-                "And made ME do most of the accusations...",
-            ],
-            [
-                "He's still an amazing boss and friend."
-            ],
-            [
-                "And even though Averie is on the\nopposite team...",
-            ],
-            [
-                "I can't really hate them."
-            ],
-            [
-                "It takes a lot of guts to do what\nyou think is right."
-            ],
-            [
-                "In my opinion everyone who\nworked on Hacma stuff...",
-            ],
-            [
-                "Deserves anything they can get\ntheir hands on."
-            ],
-            [
-                "..."
-            ],
-            [
-                "Damn that was corny."
-            ]
-        ],
-        talk_mick : [
-            [
-                "Mickerrific?",
-                "The person or the community?"
-            ],
-            [
-                "Seeing as this is a one way dialogue,",
-                "I'll just do both."
-            ],
-            [
-                "Let's do the community first."
-            ],
-            [
-                "This community is amazing.",
-                "A bit...\"" + "hyper" + "\" sometimes..."
-            ],
-            [
-                "But amazing nonetheless.",
-                "I wouldn't trade this community\nfor anything."
-            ],
-            [
-                "Mick on the other hand is a terrible,"
-            ],
-            [
-                "Irredeemable,"
-            ],
-            [
-                "HORRIFIC person who 100% deserves\nto be cancelled."
-            ]
-        ],
-        talk_battle_style : [
-            [
-                "If you didn't see it before you came\nto me, there's a little thingy in the top\nleft of the room that let's\nyou change the battle style!"
-            ],
-        ],
+        intro : get_dia("intro"),
+        outro : get_dia("outro"),
+        buy : get_dia("buy"),
+        thanks : get_dia("thanks"),
+        broke : get_dia("broke"),
+        full : get_dia("full"),
+        looking : get_dia("looking"),
+        random_flavor : get_dia("random_flavor"),
+        talk_flavor : get_dia("talk_flavor"),
+        talk_options : get_dia("talk_options"),
+        talk_hello : get_dia("talk_hello"),
+        talk_hacma : get_dia("talk_hacma"),
+        talk_mick : get_dia("talk_mick"),
+        talk_battle_style : get_dia("talk_battle_style"),
         
-        refuse_buy : [
-            [
-                "Bro are you kidding me in THIS economy?",
-                "You'd have to kill me before I waste\nmoney on stuff I just sold you."
-            ]
-        ],
+        refuse_buy : get_dia("talk_refuse_buy"),
         
         warp_rm : rm_outsidehome,
         warp_x : 77,
@@ -221,18 +113,16 @@ switch keeper{
 box = spr_simplebox
 anim = -1
 
+currency = get_dia("currency")
 star = "*"
 
 options = [
-    "Buy",
-    "Sell",
-    "Talk",
-    "Exit"
+    get_txt("shop.buy"),
+    get_txt("shop.sell"),
+    get_txt("shop.talk"),
+    get_txt("shop.exit")
 ]
-yn = [
-    "Yes",
-    "No"
-]
+yn = get_txt("sys.yn")
 
 orig_chat = []
 var all_lines = struct_get_names(keeper.lines)

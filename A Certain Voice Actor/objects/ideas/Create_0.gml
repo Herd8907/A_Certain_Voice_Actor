@@ -35,15 +35,5 @@ Made it myself! (lie)
 Outside house have some of the people who helped a lot like Flappy (duh) and either Tio or Goose whichever i can get to help with music 
 and people who just have to be in the mod like Indie and hater and Yosh (can i reach out to them?)
 
-
-___________________________________________
-############################################################################################
-ERROR in action number 1
-of Draw Event for object obj_shop:
-DoAdd :2: illegal array use
- at gml_Object_obj_shop_Draw_0 (line 431) -         draw_text_color(30, 130 + (i * 20), opts[i] + new_txt, talk_col, talk_col, talk_col, talk_col, 1)
-############################################################################################
-gml_Object_obj_shop_Draw_0 (line 431)
-
-
-*/
+HACMA PLAYLIST FOR GAME DESCRIPTION
+https://youtube.com/playlist?list=PLIcTOKQnbByw&si=kQZ95ZP4lVpbNanO

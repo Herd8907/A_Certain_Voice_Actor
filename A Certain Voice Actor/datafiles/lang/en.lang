@@ -12,9 +12,114 @@
 	},
 	"dia": {
 		"room": {
-			"rm_test_waterfall": {
-				"intr_bed": [["A bed!"],["Wait...","Why is a bed here?"]]
+			"rm_shop_herd": {
+				"currency": "G",
+				"intro": [["Hey man. What's up?"]],
+				"outro": [["See ya. Stop by later."]],
+				"buy": [["&*:0&Whatcha#wanna buy?"]],
+				"thanks": [["&*:0&Thanks a lot#man."]],
+				"broke": [["&*:0&Twin is#me fr#(brokie)"]],
+				"full": [["&*:0&There's a#box right#there y'know."]],
+				"looking": [["&*:0&Snooping#as usual I#see?"]],
+				"random_flavor": [["This is an obvious#self insert. Sorry"]],
+				"talk_flavor": [["&*:0&Wanna chat?"]],
+				"talk_options": ["Say Hello","Hacma","Mickerrific","Battle Style"],
+				"talk_hello": [["Howdy!"],["..."],["......"],["........."],["............?"],["Bro PLEASE stop staring at me#:heartbreak:"]],
+				"talk_hacma": [["I make a lot of references to Hacma so here's a#crash course for ya new viewers."],["Hacma, aka Mickerrific Hater, was just that."],["A group dedicated to exposing Mick for his crimes."],["We did that for a while and everything was good until#ACMA (Anti.Cancel.Mick.Association) showed up."],["Led by Averie they went against us and..."],["Well I'll let you figure that out yourself.#A playlist of all the Hacma stuff is in the Gamejolt description.]]",
+				"talk_mick",":", [["Mickerrific? The person or the community?"],["Seeing as this is a one way dialogue,#I'll just do them both."],["Let's do the community first."],["This community is amazing."],["A bit...\"hyper\" at times..."],["But amazing nonetheless."],["I wouldn't trade this community#for anything (maybe 6 bucks idk)"],["Mick on the other hand is a terrible,"],["Irredeemable,"],["HORRIFIC person who 100% deserves#tobe cancelled."]],
+				"talk_battle_style",":", [["If you didn't see it before you came#to me, there's a little thingy in the top#left of the room that let's#you change the battle style!"]],
+				"refuse_buy",":", [["Bro are you kidding me? In THIS economy???"],["You'd have to kill me before I waste#money on stuff I just sold you."]]]]
 			}
 		}
+	},
+	"item": {
+		"food": {
+			"terrific_cocoa": {
+				"name": "Terrific Cocoa",
+				"name_short": "TeriCocoa",
+				"desc": [["Heals 25 HP A cup of hot chocolate at the perfect temperature. Has microphone shaped marshmallows."]]
+			},
+			"honey_bunny": {
+				"name": "Honey Bunny",
+				"name_short": "HoneyBun",
+				"desc": [["Heals 12 HP A honey bun in the shape of a rabbit. Reminds you of a certain snowy shop."]]
+			},
+			"pie": {
+				"name": "Butterscotch Pie",
+				"name_short": "ButtPie",
+				"desc": [["All HP A warm slice of Butterscotch and Cinnamon pie."]]
+			},
+			"fanta_c": {
+				"name": "The Fanta C",
+				"name_short": "FantaC",
+				"desc": [["All HP Is this the real life? Is this just Fanta C? Increases ATTACK and DEFENSE."]]
+			}
+		},
+		"weapons": {
+			"wooden_dirk": {
+				"name": "Wooden Dirk",
+				"name_short": "WoodDirk",
+				"desc": [["Weapon AT 3 A dagger made of wood. Lightweight and easy to use."]]
+			},
+			"stick": {
+				"name": "Stick",
+				"name_short": "Stick",
+				"desc": [["Weapon AT 0 Its bark is worse than its bite."]]
+			}
+		},
+		"armor": {
+			"stylish_wig": {
+				"name": "Stylish Wig",
+				"name_short": "StyleWig",
+				"desc": [["It's ok to be a femboy Mick!"]]
+			},
+			"bandage": {
+				"name": "Bandage",
+				"name_short": "Bandage"
+			}
+		}
+	},
+	"menu": {
+		"comment0": "",
+		"comment1": "Since\nChapter 1",
+		"lv_mini": "LV",
+		"hp_mini": "HP",
+		"g_mini": "$",
+		"item": "ITEM",
+		"stat": "STAT",
+		"cell": "CELL",
+		"use": "USE",
+		"info": "INFO",
+		"drop": "DROP",
+		"lv": "LV  ",
+		"hp": "HP  ",
+		"at": "AT  ",
+		"df": "DF  ",
+		"xp": "EXP: ",
+		"next": "NEXT: ",
+		"wp": "WEAPON: ",
+		"ar": "ARMOR: ",
+		"g": "MONEY: ",
+		"equip": [["You equipped &l&."]],
+		"eat": [["&l&","You recovered &l& HP."]],
+		"eat_max": [["&l&","Your HP was maxed out."]],
+		"cell_names": {
+			"toriel": "Call Home",
+			"papyrus": "Papyrus's Phone",
+			"sans": "Sans's Phone"
+		}
+	},
+	"shop": {
+		"buy": "Buy",
+		"sell": "Sell",
+		"talk": "Talk",
+		"exit": "Exit",
+		"plus": "+",
+		"armor": "Armor: &l&DF",
+		"armor_comp": "(&l&&l& DF)",
+		"weapon": "Weapon: &l&AT",
+		"weapon_comp": "(&l&&l& AT)",
+		"food": "Heals: &l&",
+		"new": " (NEW)"
 	}
 }

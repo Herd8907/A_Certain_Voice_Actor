@@ -58,9 +58,9 @@ global.item = {
 		terrific_cocoa : {
 			
             id : "terrific_cocoa",
-			name : "Terrific Cocoa",
-			name_short : "TeriCocoa",
-            desc : "Heals 25 HP A cup of hot chocolate at the perfect temperature. Has microphone shaped marshmallows.",
+			name : get_txt("item.food.terrific_cocoa.name"),
+			name_short : get_txt("item.food.terrific_cocoa.name_short"),
+            desc : get_txt("item.food.terrific_cocoa.desc"),
             
             heals : 25
             
@@ -69,9 +69,9 @@ global.item = {
         honey_bunny : {
 			
             id : "honey_bunny",
-			name : "Honey Bunny",
-			name_short : "HoneyBun",
-            desc : "Heals 12 HP A honey bun in the shape of a rabbit. Reminds you of a certain snowy shop.",
+			name : get_txt("item.food.honey_bunny.name"),
+			name_short : get_txt("item.food.honey_bunny.name_short"),
+            desc : get_txt("item.food.honey_bunny.desc"),
             
             heals : 12
             
@@ -80,9 +80,9 @@ global.item = {
         pie : {
 			
             id : "pie",
-			name : "Butterscotch Pie",
-			name_short : "ButtPie",
-            desc : "All HP A warm slice of Butterscotch and Cinnamon pie.",
+			name : get_txt("item.food.pie.name"),
+			name_short : get_txt("item.food.pie.name_short"),
+            desc : get_txt("item.food.pie.desc"),
             
             heals : 999
             
@@ -91,9 +91,9 @@ global.item = {
         fanta_c : {
 			
             id : "fanta_c",
-			name : "The Fanta C",
-			name_short : "FantaC",
-            desc : "All HP Is this the real life? Is this just Fanta C? Increases ATTACK and DEFENSE.",
+			name : get_txt("item.food.fanta_c.name"),
+			name_short : get_txt("item.food.fanta_c.name_short"),
+            desc : get_txt("item.food.fanta_c.desc"),
             
             heals : 999
             
@@ -106,9 +106,9 @@ global.item = {
 		wooden_dirk : {
 			
             id : "wooden_dirk",
-			name : "Wooden Dirk",
-			name_short : "WoodDirk",
-            desc : "Weapon AT 3 A dagger made of wood. Lightweight and easy to use.",
+			name : get_txt("item.weapons.wooden_dirk.name"),
+			name_short : get_txt("item.weapons.wooden_dirk.name_short"),
+            desc : get_txt("item.weapons.wooden_dirk.desc"),
             
             atk : 3
             
@@ -117,9 +117,9 @@ global.item = {
         stick : {
 			
             id : "stick",
-			name : "Stick",
-			name_short : "Stick",
-            desc : "Weapon AT 0 Its bark is worse than its bite.",
+			name : get_txt("item.weapons.stick.name"),
+			name_short : get_txt("item.weapons.stick.name_short"),
+            desc : get_txt("item.weapons.stick.desc"),
             
             atk : 0
             
@@ -132,9 +132,9 @@ global.item = {
 		stylish_wig : {
 			
             id : "stylish_wig",
-			name : "Stylish Wig",
-			name_short : "StyleWig",
-            desc : "It's ok to be a femboy Mick!",
+			name : get_txt("item.armor.stylish_wig.name"),
+			name_short : get_txt("item.armor.stylish_wig.name_short"),
+            desc : get_txt("item.armor.stylish_wig.desc"),
             
             def : 8
             
@@ -143,7 +143,7 @@ global.item = {
         bandage : {
 			
             id : "bandage",
-			name : "Bandage",
+			name : get_txt("item.armor.bandage.name"),
             
             def : 0
             
@@ -153,7 +153,7 @@ global.item = {
     
 }
 
-global.inventory = []
+global.inventory = [global.item.armor.bandage, global.item.armor.stylish_wig]
 scr_updatelist(true)
 
 
