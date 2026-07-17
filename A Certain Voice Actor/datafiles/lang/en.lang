@@ -1,0 +1,20 @@
+{
+	"sys": {
+		"fallback": [["Fallback message."]],
+		"title": "YOUR GAME NAME HERE",
+		"asterisk": "*",
+		"alpha_upper": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+		"alpha_lower": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+		"yn": ["Yes","No"],
+		"y": "Yes",
+		"n": "No",
+		"default_": [["Default text."]]
+	},
+	"dia": {
+		"room": {
+			"rm_test_waterfall": {
+				"intr_bed": [["A bed!"],["Wait...","Why is a bed here?"]]
+			}
+		}
+	}
+}

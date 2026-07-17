@@ -1,7 +1,7 @@
 slots = []
 
 if file_exists(global.json) {
-    save = scr_json_to_var()
+    save = json_to_var()
     global.num_slots = save[0]
 } else {
     global.num_slots = 1
@@ -42,7 +42,7 @@ if file_exists(global.json) {
 global.slots = slots
 
 if file_exists(global.json) and global.new_game = false{
-    json = scr_json_to_var()
+    json = json_to_var()
     global.oldtime = json[1].game.time
 } else {
     global.oldtime = 0

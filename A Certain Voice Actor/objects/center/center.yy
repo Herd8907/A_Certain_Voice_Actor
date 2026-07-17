@@ -8,8 +8,8 @@
   "name":"center",
   "overriddenProperties":[],
   "parent":{
-    "name":"test",
-    "path":"folders/Objects/test.yy",
+    "name":"func",
+    "path":"folders/Objects/func.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_spamfry_0",
+    "path":"sprites/spr_spamfry_0/spr_spamfry_0.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

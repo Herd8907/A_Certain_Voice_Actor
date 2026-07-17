@@ -1,7 +1,7 @@
 function scr_updatelist(load = false){
     
     if load = true and global.new_game = false {
-        save = scr_json_to_var()
+        save = json_to_var()
         global.inv = save[global.slot].mainchara.inv
         scr_lists_id_convert()
         exit

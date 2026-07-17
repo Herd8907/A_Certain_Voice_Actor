@@ -1,15 +1,29 @@
 //select
 if keyboard_check_pressed(global.selectbutton) or keyboard_check_pressed(vk_enter){
-	global.selectbuttonpressed = true
-} else {
-	global.selectbuttonpressed = false
+    global.selectbuttonpressed = true
+} else{
+    global.selectbuttonpressed = false
 }
 
 //cancel
 if keyboard_check_pressed(global.cancelbutton) or keyboard_check_pressed(vk_shift){
-	global.cancelbuttonpressed = true
-} else {
-	global.cancelbuttonpressed = false
+    global.cancelbuttonpressed = true
+} else{
+    global.cancelbuttonpressed = false
+}
+
+//menu
+if keyboard_check_pressed(global.menubutton){
+    global.menubuttonpressed = true
+} else{
+    global.menubuttonpressed = false
+}
+
+//sprint
+if keyboard_check(global.sprintbutton) or keyboard_check(vk_shift){
+    global.sprintbuttonpressed = true
+} else{
+    global.sprintbuttonpressed = false
 }
 
 //up
@@ -40,26 +54,26 @@ if keyboard_check(global.downbutton) or keyboard_check(vk_down){
 
 //left
 if keyboard_check_pressed(global.leftbutton) or keyboard_check_pressed(vk_left){
-	global.leftbuttonpressed1 = true
-} else {
-	global.leftbuttonpressed1 = false
+    global.leftbuttonpressed1 = true
+} else{
+    global.leftbuttonpressed1 = false
 }
 
 if keyboard_check(global.leftbutton) or keyboard_check(vk_left){
-	global.leftbuttonpressed = true
-} else {
-	global.leftbuttonpressed = false
+    global.leftbuttonpressed = true
+} else{
+    global.leftbuttonpressed = false
 }
 
 //right
 if keyboard_check_pressed(global.rightbutton) or keyboard_check_pressed(vk_right){
-	global.rightbuttonpressed1 = true
-} else {
-	global.rightbuttonpressed1 = false
+    global.rightbuttonpressed1 = true
+} else{
+    global.rightbuttonpressed1 = false
 }
 
 if keyboard_check(global.rightbutton) or keyboard_check(vk_right){
-	global.rightbuttonpressed = true
-} else {
-	global.rightbuttonpressed = false
+    global.rightbuttonpressed = true
+} else{
+    global.rightbuttonpressed = false
 }

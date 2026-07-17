@@ -9,8 +9,8 @@
   "name":"obj_dualinputchecker",
   "overriddenProperties":[],
   "parent":{
-    "name":"test",
-    "path":"folders/Objects/test.yy",
+    "name":"func",
+    "path":"folders/Objects/func.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bluechair",
-    "path":"sprites/spr_bluechair/spr_bluechair.yy",
+    "name":"spr_pc",
+    "path":"sprites/spr_pc/spr_pc.yy",
   },
   "spriteMaskId":null,
   "visible":false,
