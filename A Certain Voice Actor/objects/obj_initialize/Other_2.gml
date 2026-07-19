@@ -153,7 +153,7 @@ global.item = {
     
 }
 
-global.inventory = [global.item.armor.bandage, global.item.armor.stylish_wig]
+global.inventory = []
 scr_updatelist(true)
 
 

@@ -27,21 +27,21 @@ draw_set_font(fnt_main)
 draw_text(box_left_x + x_off + 8, box_stats_mini_y + y_off + 5, name)
 
 draw_set_font(fnt_small)
-draw_text(box_left_x + x_off + 8, box_stats_mini_y + y_off + 22, "LV")
+draw_text(box_left_x + x_off + 8, box_stats_mini_y + y_off + 22, get_txt("menu.lv_mini"))
 draw_text(box_left_x + x_off + 26, box_stats_mini_y + y_off + 22, lv)
 
-draw_text(box_left_x + x_off + 8, box_stats_mini_y + y_off + 31, "HP")
+draw_text(box_left_x + x_off + 8, box_stats_mini_y + y_off + 31, get_txt("menu.hp_mini"))
 draw_text(box_left_x + x_off + 26, box_stats_mini_y + y_off + 31, string(hp) + "/" + string(hpmax))
 
-draw_text(box_left_x + x_off + 8, box_stats_mini_y + y_off + 40, "G")
+draw_text(box_left_x + x_off + 8, box_stats_mini_y + y_off + 40, get_txt("menu.g_mini"))
 draw_text(box_left_x + x_off + 26 - money_off, box_stats_mini_y + y_off + 40, money)
 
 //select
 draw_sprite_stretched(box, frame, box_left_x + x_off, box_bot_y + y_off, box_left_w, box_select_h)
 
 draw_set_font(fnt_main)
-draw_text(box_left_x + x_off + 26, box_bot_y + y_off + 10, "ITEM")
-draw_text(box_left_x + x_off + 26, box_bot_y + y_off + 28, "STAT")
+draw_text(box_left_x + x_off + 26, box_bot_y + y_off + 10, get_txt("menu.item"))
+draw_text(box_left_x + x_off + 26, box_bot_y + y_off + 28, get_txt("menu.stat"))
 
 //right box
 if submenu = "item" {
@@ -60,9 +60,9 @@ if submenu = "item" or submenu = "item_options" {
         draw_text(box_right_x + x_off + 22, box_top_y + y_off + 14 + (i * 16), global.inventory[i].name)
     }
     
-    draw_text(box_right_x + x_off + 22, box_top_y + y_off + 154, "USE")
-    draw_text(box_right_x + x_off + 72, box_top_y + y_off + 154, "INFO")
-    draw_text(box_right_x + x_off + 132, box_top_y + y_off + 154, "DROP")
+    draw_text(box_right_x + x_off + 22, box_top_y + y_off + 154, get_txt("menu.use"))
+    draw_text(box_right_x + x_off + 72, box_top_y + y_off + 154, get_txt("menu.info"))
+    draw_text(box_right_x + x_off + 132, box_top_y + y_off + 154, get_txt("menu.drop"))
     
 }
 
@@ -70,19 +70,19 @@ if submenu = "item" or submenu = "item_options" {
 if submenu = "stat" {
     draw_text(box_right_x + x_off + 14, box_top_y + y_off + 16, "\"" + name + "\"")
     
-    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 40, "LV  " + string(lv))
-    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 62, "HP  " + string(hp) + " / " + string(hpmax))
+    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 40, get_txt("menu.lv") + string(lv))
+    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 62, get_txt("menu.hp") + string(hp) + " / " + string(hpmax))
     
-    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 94, "AT  " + string(at) + " (" + string(weapon_at) + ")")
-    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 110, "DF  " + string(df) + " (" + string(armor_df) + ")")
+    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 94, get_txt("menu.at") + string(at) + " (" + string(weapon_at) + ")")
+    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 110, get_txt("menu.df") + string(df) + " (" + string(armor_df) + ")")
     
-    draw_text(box_right_x + x_off + 98, box_top_y + y_off + 94, "EXP: " + string(xp))
-    draw_text(box_right_x + x_off + 98, box_top_y + y_off + 110, "NEXT: " + string(next_lv))
+    draw_text(box_right_x + x_off + 98, box_top_y + y_off + 94, get_txt("menu.xp") + string(xp))
+    draw_text(box_right_x + x_off + 98, box_top_y + y_off + 110, get_txt("menu.next") + string(next_lv))
     
-    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 140, "WEAPON: " + string(wp.name))
-    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 156, "ARMOR: " + string(ar.name))
+    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 140, get_txt("menu.wp") + string(wp.name))
+    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 156, get_txt("menu.ar") + string(ar.name))
     
-    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 176, "MONEY: " + string(money))
+    draw_text(box_right_x + x_off + 14, box_top_y + y_off + 176, get_txt("menu.g") + string(money))
     
     draw_sprite(spr_friskicon, frame, box_right_x + x_off + 125, box_top_y + y_off + 38)
     draw_text(box_right_x + x_off + 109, box_top_y + y_off + 62, "Frisk")

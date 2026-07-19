@@ -2,6 +2,7 @@ fadeseconds = 0.2
 fadetime = 60 * fadeseconds
 image_alpha = 0
 increment = 1 / fadetime
+is_warping = true
 
 target_x = 0
 target_y = 0

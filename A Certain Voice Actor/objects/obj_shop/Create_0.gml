@@ -78,7 +78,7 @@ herd = {
         talk_mick : get_dia("talk_mick"),
         talk_battle_style : get_dia("talk_battle_style"),
         
-        refuse_buy : get_dia("talk_refuse_buy"),
+        refuse_buy : get_dia("refuse_buy"),
         
         warp_rm : rm_outsidehome,
         warp_x : 77,
